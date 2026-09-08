@@ -77,7 +77,7 @@ export const Sidebar: React.FC = () => {
         <div>
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Admin</p>
           <nav className="space-y-1">
-            <NavLink to="/admin-role" className={linkClass}>
+            <NavLink to="/profile" className={linkClass}>
               <Shield size={18} /> Admin role
             </NavLink>
             <NavLink to="/control-authority" className={linkClass}>

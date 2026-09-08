@@ -8,6 +8,7 @@ import { OrdersPage } from './processes/pages/ordermanagement/ui/OrdersPage';
 import { CustomersPage } from './processes/pages/customers/ui/CustomersPage';
 import { CategoriesPage } from './processes/pages/categories/ui/CategoriesPage';
 import { AddProductPage } from './processes/pages/products/ui/AddProductPage';
+import { ProfileUpdate } from './processes/pages/admin/ui/ProfileUpdate';
 
 
 export const App: React.FC = () => {
@@ -33,7 +34,7 @@ export const App: React.FC = () => {
         <Route path="/products" element={<div className="p-8 text-2xl font-bold">Products Page (Coming soon)</div>} />
 
 
-        <Route path="*" element={<div className="p-8 text-2xl font-bold text-red-500">404 - Page Not Found</div>} />
+        <Route path="/profile" element={<ProfileUpdate />} />
       </Routes>
     </BrowserRouter>
   );
